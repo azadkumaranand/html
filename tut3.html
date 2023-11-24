@@ -1,69 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
 </head>
 <style>
-    table{
+    table {
         border-collapse: collapse;
-        width: 50%;
+        width: 100%;
     }
-    tr,td, th{
+
+    .table1{
+        background-color: green;
+        color: white;
+        font-size: 50px;
+        /*font-weight: 900;*/
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .table2{
+        background-color: gray;
+    }
+    .table2 tr, .table2 td, .table2 th{
+        border: 1px solid red;
+    }
+
+    tr,
+    td,
+    th {
         border: 1px solid gray;
     }
-    td{
-        padding: 10px;
+
+    .table1 tr{
+        background-color: blueviolet;
     }
+
+    td,
+    th {
+        /*padding: 10px;
+        width: 60px;*/
+    }
+
     /*.head{
         font-weight: 800;
     }*/
 </style>
+
 <body>
-    <table>
+    <h3>HTML Table</h3>
+    <table class="table1">
         <tr class="head">
             <th>No.</th>
             <th>Full Name</th>
             <th>Position</th>
             <th>Salary</th>
         </tr>
-        <tr>
-            <td style="text-align: center">1</td>
+        <tr style="text-align: right;">
+            <td>1</td>
             <td>Bill Gates</td>
             <td>Founder Microsoft</td>
             <td>1000</td>
         </tr>
         <tr>
-            <td style="text-align: center">2</td>
+            <td>2</td>
             <td>Steve Jobs</td>
             <td>Founder Apple</td>
             <td>1200</td>
         </tr>
-        <tr>    
-            <td style="text-align: center">3</td>
+        <tr>
+            <td>3</td>
             <td>Larry Page</td>
             <td>Founder Google</td>
             <td>1100</td>
         </tr>
         <tr>
-            <td style="text-align: center">4</td>
+            <td>4</td>
             <td>Mark Jukarbarg</td>
             <td>Founder Facebook</td>
             <td>1300</td>
         </tr>
     </table>
-    <table>
+    <br>
+    <br>
+    <br>
+    <table class="table2">
         <tr>
-            <td>Day/Period</td>
-            <td>9:30-10:20</td>
-            <td>9:30-10:20</td>
-            <td>9:30-10:20</td>
-            <td>9:30-10:20</td>
-            <td>9:30-10:20</td>
-            <td>9:30-10:20</td>
-            <td>9:30-10:20</td>
-            <td>9:30-10:20</td>
+            <th>Day/Period</th>
+            <th>
+                <p>I</p>
+                <span>9:30-10:20</span>
+            </th>
+            <th>
+                <p>I</p>
+                <span>9:30-10:20</span>
+            </th>
+            <th>
+                <p>I</p>
+                <span>9:30-10:20</span>
+            </th>
+            <th>
+                <p>I</p>
+                <span>9:30-10:20</span>
+            </th>
+            <th>
+                <p>I</p>
+                <span>9:30-10:20</span>
+            </th>
+            <th>
+                <p>I</p>
+                <span>9:30-10:20</span>
+            </th>
+            <th>
+                <p>I</p>
+                <span>9:30-10:20</span>
+            </th>
+            <th>
+                <p>II</p>
+                <span>9:30-10:20</span>
+            </th>
+            <th>
+                <p>II</p>
+                <span>9:30-10:20</span>
+            </th>
         </tr>
         <tr>
             <td>Monday</td>
@@ -71,12 +132,12 @@
             <td>Mat</td>
             <td>Che</td>
             <td rowspan="6">LUNCH</td>
-            <td colspan="3" style="text-align: center;">Lab</td>
+            <td colspan="3">Lab</td>
             <td>Phy</td>
         </tr>
         <tr>
             <td>Tuesday</td>
-            <td colspan="3" style="text-align: center;">Lab</td>
+            <td colspan="3">Lab</td>
             <td></td>
             <td>Eng</td>
             <td>Che</td>
@@ -84,16 +145,7 @@
             <td>Sports</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
+            <td>Wed</td>
             <td></td>
             <td></td>
             <td></td>
@@ -102,7 +154,7 @@
             <td></td>
         </tr>
         <tr>
-            <td></td>
+            <td>Thu</td>
             <td></td>
             <td></td>
             <td></td>
@@ -111,7 +163,16 @@
             <td></td>
         </tr>
         <tr>
+            <td>Fri</td>
             <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Sat</td>
             <td></td>
             <td></td>
             <td></td>
@@ -120,5 +181,26 @@
             <td></td>
         </tr>
     </table>
+    
+    <h3>HTML List</h3>
+
+    <!-- unorder list style type:  disc, circle, square, none-->
+
+    <ul style="list-style-type: '#'">
+        <li>Ankit</li>
+        <li>Ram</li>
+        <li>Shaym</li>
+        <li>Vishnu</li>
+    </ul>
+
+    <!-- unorder list style type:  upper-alpha, lower-alpha, decimal, upper-roman, lower-roman, none-->
+    <ol style="list-style-type: upper-roman">
+        <li>Ankit</li>
+        <li>Ram</li>
+        <li>Shaym</li>
+        <li>Vishnu</li>
+    </ol>
+
 </body>
+
 </html>
