@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,6 +46,33 @@
     /*.head{
         font-weight: 800;
     }*/
+    .unorderlist{
+        /* list-style: '$'; */
+        /* list-style: disc; */
+        /* list-style: circle; */
+        list-style: square;
+    }
+    .orderlist{
+        /* list-style: lower-alpha; */
+        /* list-style: upper-alpha; */
+        /* list-style: upper-roman; */
+        list-style: decimal;
+    }
+    .tablecontainer tr:nth-child(odd){
+        background-color: green;
+        color: white;
+    }
+    .tablecontainer tr:nth-child(even){
+        background-color: white;
+        color: black;
+    }
+    tr:hover{
+        background-color: gray;
+        font-size: 40px;
+    }
+    li:hover{
+        font-size: 40px;
+    }
 </style>
 
 <body>
@@ -186,7 +212,7 @@
 
     <!-- unorder list style type:  disc, circle, square, none-->
 
-    <ul style="list-style-type: '#'">
+    <ul class="unorderlist">
         <li>Ankit</li>
         <li>Ram</li>
         <li>Shaym</li>
@@ -194,12 +220,45 @@
     </ul>
 
     <!-- unorder list style type:  upper-alpha, lower-alpha, decimal, upper-roman, lower-roman, none-->
-    <ol style="list-style-type: upper-roman">
+    <ol class="orderlist">
         <li>Ankit</li>
         <li>Ram</li>
         <li>Shaym</li>
         <li>Vishnu</li>
     </ol>
+
+    <table class="tablecontainer">
+        <tr>
+            <th>No.</th>
+            <th>Full Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Bill Gates</td>
+            <td>Founder Microsoft</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Steve Jobs</td>
+            <td>Founder Apple</td>
+            <td>1200</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Larry Page</td>
+            <td>Founder Google</td>
+            <td>1100</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Mark Jukarbarg</td>
+            <td>Founder Facebook</td>
+            <td>1300</td>
+        </tr>
+    </table>
 
 </body>
 
