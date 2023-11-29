@@ -1,0 +1,28 @@
+.container{
+    width: 90%;
+    /* background-color: red; */
+    margin: auto;
+}
+.navbar{
+    display: flex;
+    /* background-color: green; */
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.navlinks span{
+    margin-right: 30px;
+    cursor: pointer;
+}
+.navlinks span:hover{
+    color: brown;
+}
+.logo{
+    font-size: 45px;
+    font-weight: lighter;
+    color: red;
+}
+.header{
+    background: url('../images/header.png');
+    height: 500px;
+}
