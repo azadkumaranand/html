@@ -111,6 +111,11 @@
     height: 459px;
     width: 306px;
     border-radius: 20px;
+    scale: 1;
+    transition: all 0.5s ease-in-out 0.25s;
+}
+.card-img img:hover{
+    scale: 1.1;
 }
 
 .card-container .card{
@@ -123,6 +128,7 @@
 .card-content{
     width: 48%;
     padding: 40px;
+    position: relative;
     
 }
 .card-title{
@@ -142,4 +148,44 @@
 
 .card-container{
     display: flex;
+}
+
+.card-icons{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-evenly; */
+    /* border: 1px solid red; */
+    width: 60%;
+    padding: 0;
+    position: absolute;
+    /* top: 40px; */
+    bottom: 20px;
+}
+
+.card-icons li{
+    background-color: #f1c522;
+    padding: 10px;
+    border-radius: 50%;
+    color: black;
+}
+
+.card-icons li:hover{
+    color: white;
+}
+
+.location-card{
+    width: 32%;
+}
+.location-card-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+.address{
+    margin: 0;
+}
+
+.location-container{
+    display: flex;
+    justify-content: space-between;
 }
