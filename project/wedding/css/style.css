@@ -32,7 +32,7 @@
 .header{
     background: url('../images/header.png');
     background-color: #d9d8d6;
-    height: 450px;
+    height: 80vh;
     border-radius: 20px;
     background-size: cover;/*cover, contain, 800px 700px ...*/
     background-repeat: no-repeat;
@@ -53,8 +53,9 @@
     padding: 10px;
     /* background-color: green; */
     position: absolute;
-    right: 120px;
-    bottom: 60px;
+    /* left: 0; */
+    right: 60px;
+    bottom: 0px;
     border-radius: 20px;
 }
 .calendercontainer div:nth-child(1){
@@ -78,6 +79,7 @@
 }
 .headercontent h2{
     color: brown;
+    font-size: 40px;
 }
 
 .headercontent h1{
@@ -88,6 +90,7 @@
 .headercontent p{
     color: white;
     font-size: 25px;
+    margin: 12px 0;
 }
 .calendercontainer{
     width: 250px;
@@ -145,13 +148,14 @@
     justify-content: space-around;
     margin: auto;
     width: 7%;
+    align-items: center;
 }
 
 
 .card-img{
     overflow: hidden;
     height: 459px;
-    width: 100%;
+    width: 50%;
     border-radius: 20px;
     overflow: hidden;
     display: flex;
@@ -159,7 +163,7 @@
 }
 .card-img img{
     height: inherit;
-    width: inherit;
+    width: 100%;
     scale: 1;
     transition: all 0.5s ease-in-out 0.05s;
 }
@@ -212,7 +216,7 @@
 .card-icons{
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     /* justify-content: space-evenly; */
     /* border: 1px solid red; */
     width: 60%;
@@ -234,11 +238,12 @@
 }
 
 .location-card{
-    width: 32%;
+    width: 400px;
+    /* height: 450px; */
 }
 .location-card-img{
     width: 100%;
-    height: 270px;
+    /* height: 270px; */
     overflow: hidden;
     border-radius: 20px;
 }
@@ -255,7 +260,9 @@
 
 .location-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;/*fex-start, flex-end, space-around, center, space-evenly*/
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
 }
 
 .tab-main-container{
@@ -305,7 +312,18 @@
     display: none;
 }
 
-@media(max-width: 1100px){
+@media(max-width: 1400px){
+    .location-card{
+        width: 370px;
+    }
+}
+@media(max-width: 1290px){
+    .location-card{
+        width: 330px;
+    }
+}
+
+@media(max-width: 1110px){
     .card-container .card{
         width: 100%;
         flex-direction: column;
@@ -328,9 +346,33 @@
         bottom: -23px;
         width: 200px;
     }
+    .headercontent h1{
+        font-size: 45px;
+    }
+    .headercontent h2{
+        font-size: 30px;
+    }
+    .stylebelowhead{
+        align-items: center;
+        width: 100px;
+    }
+    .location-container{
+        justify-content: center;
+    }
+    .location-card{
+        width: 400px;
+        margin: 0 20px;
+    }
+    
 }
 
 @media(max-width: 950px){
+    .container{
+        width: 80%;
+    }
+    .location-card{
+        width: 95%;
+    }
     .navlinks{
         display: none;
     }
@@ -344,6 +386,7 @@
         background-size: contain;
         background-position: bottom;
         min-height: 650px;
+        padding: 30px;
     }
     .headercontent h1{
         font-size: 45px;
@@ -361,6 +404,40 @@
     .calendercontainer{
         left: 60px;
 
+    }
+    .tab-main-container{
+        flex-direction: column;
+    }
+    .tabcontainer{
+        width: 100%;
+    }
+    .tab p{
+        width: 100%;
+        text-align: center;
+    }
+    .tab p:nth-child(1) {
+        border-bottom: 2px solid brown;
+        border-right: 2px dotted gray;
+    }
+    .tab p:nth-child(2) {
+        border-bottom: 2px solid gray;
+        border-right: none;
+    }
+    .tab{
+        display: flex;
+        /* margin: 20px 0; */
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .tabimg{
+        width: 100%;
+        height: 400px;
+    }
+    .tabcontents{
+        width: 100%;
+    }
+    .tabcard{
+        flex-direction: column;
     }
 }
 /* @media(max-width: 765px){
