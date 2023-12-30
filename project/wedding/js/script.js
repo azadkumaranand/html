@@ -23,8 +23,21 @@ function myFunction(){
     // console.log(navlinks.style.display)
     // navlinks.style.display = "flex";
     // menubar.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    // console.log(navlinks.style.display == "");
+    // console.log(navlinks.style.display == "none" )
+    // console.log(navlinks.style.display == "")
+    // console.log(navlinks.style.display == "none" || navlinks.style.display == "")
+    //syntax of if
+    /*
 
-    if(navlinks.style.display == "none"){
+    if(condition){
+        //your code which will execute when codition is true
+    }else{
+        //your code which will execute when codition is false
+    }
+    
+    */
+    if(navlinks.style.display == "none" || navlinks.style.display == ""){
         navlinks.style.display = "flex";
         menubar.innerHTML = '<i class="fa-solid fa-xmark"></i>';
     }else{
