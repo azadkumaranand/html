@@ -55,3 +55,78 @@ console.log("below function")
 //how to add event on selected html element
 
 menubar.addEventListener('click', myFunction);//when you pass a function as an argument then you don't need to add ()
+
+//change tab html content content on click
+
+let tabcards = document.getElementById("tabcards");
+let groomside = document.getElementById('groomside');
+let brideside = document.getElementById('brideside');
+
+brideside.addEventListener('click', function(){
+    tabcards.innerHTML = `
+    <div class="tabcard">
+        <div class="tabimg">
+            <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/people/lifestyle-people-emotions-casual-concept.jpg" alt="">
+        </div>
+        <div class="card-content">
+            <div>
+                <p class="card-title" style="margin: 0;">
+                    Kevin <span>COUSIN</span>
+                </p>
+                <p class="card-desc">
+                    Wedding Lite is free HTML template provided by Tooplate website. It is based on Bootstrap v5.1.3 CSS layout. You are free to use it for your wedding.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="tabcard">
+        <div class="tabimg">
+            <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/people/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="">
+        </div>
+        <div class="card-content">
+            <div>
+                <p class="card-title" style="margin: 0;">
+                    Wilson <span>BEST FRIEND                                        </span>
+                </p>
+                <p class="card-desc">
+                    Feel free to make a PayPal contribution to contact [at] tooplate.com to support the open community of free HTML templates. Thank you.
+                </p>
+            </div>
+        </div>
+    </div>
+`;
+})
+groomside.addEventListener('click', function(){
+    tabcards.innerHTML = `
+    <div class="tabcard">
+        <div class="tabimg">
+            <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/people/attractive-laughing-guy-having-fun-smiling-happy.jpg" alt="">
+        </div>
+        <div class="card-content">
+            <div>
+                <p class="card-title" style="margin: 0;">
+                    Kevin <span>COUSIN</span>
+                </p>
+                <p class="card-desc">
+                    Wedding Lite is free HTML template provided by Tooplate website. It is based on Bootstrap v5.1.3 CSS layout. You are free to use it for your wedding.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="tabcard">
+        <div class="tabimg">
+            <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/people/portrait-handsome-attractive-young-man-posing.jpg" alt="">
+        </div>
+        <div class="card-content">
+            <div>
+                <p class="card-title" style="margin: 0;">
+                    Wilson <span>BEST FRIEND                                        </span>
+                </p>
+                <p class="card-desc">
+                    Feel free to make a PayPal contribution to contact [at] tooplate.com to support the open community of free HTML templates. Thank you.
+                </p>
+            </div>
+        </div>
+    </div>
+    `;
+})
