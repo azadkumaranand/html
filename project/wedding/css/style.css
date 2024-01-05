@@ -387,11 +387,22 @@
     justify-content: center;
     align-items: center;
     display: none;
+    overflow: hidden;
 }
 .popupimg{
-    /* z-index: 9999999;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-
+#closepopup{
+    color:red;
+    font-size: 45px;
+    font-weight: 700;
+    cursor:pointer;
+    position: fixed;
+    right: 10px;
+}
 .popupimg img{
     /* z-index: 9999999; */
 }

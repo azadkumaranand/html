@@ -5,7 +5,6 @@ let age = 30;
 let info = "hello world my name is azad kumar";
 console.log(info);
 
-console.log(info);
 
 //selection of html elements by id
 
@@ -61,6 +60,13 @@ menubar.addEventListener('click', myFunction);//when you pass a function as an a
 let tabcards = document.getElementById("tabcards");
 let groomside = document.getElementById('groomside');
 let brideside = document.getElementById('brideside');
+let image1 = document.getElementById('image1');
+let closepopup = document.getElementById('closepopup');
+let popupcontainer = document.getElementById('popupcontainer');
+// let gallery_imeages = document.querySelector('p');
+// let gallery_imeages = document.querySelectorAll('p');
+let gallery_imeages = document.querySelectorAll('.gallery_img');
+console.log(gallery_imeages);
 
 brideside.addEventListener('click', function(){
     tabcards.innerHTML = `
@@ -129,4 +135,13 @@ groomside.addEventListener('click', function(){
         </div>
     </div>
     `;
+})
+// alert("hello world")
+image1.addEventListener('click', function(){
+    popupcontainer.style.display = "block";
+    popupcontainer.style.overflow = "hidden";
+})
+
+closepopup.addEventListener('click', function(){
+    popupcontainer.style.display = "none";
 })
