@@ -138,10 +138,17 @@ groomside.addEventListener('click', function(){
 })
 // alert("hello world")
 image1.addEventListener('click', function(){
-    popupcontainer.style.display = "block";
-    popupcontainer.style.overflow = "hidden";
+    
 })
 
 closepopup.addEventListener('click', function(){
     popupcontainer.style.display = "none";
 })
+
+function openmodal(imgsrc){
+    let popupimage = document.querySelector('.popupimg img');
+    // console.log(popupimage);
+    popupimage.src = imgsrc;
+    popupcontainer.style.display = "block";
+    popupcontainer.style.overflow = "hidden";
+}

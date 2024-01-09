@@ -208,21 +208,21 @@
         </div>
         <div class="container">
             <div class="gallery">
-                <div class="gallery_card_1 gallery_img" id="image1">
+                <div class="gallery_card_1 gallery_img" onclick="openmodal('https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/bearded-stylish-groom-suit-beautiful-blonde.jpg')" id="image1">
                     <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/bearded-stylish-groom-suit-beautiful-blonde.jpg"
                         alt="">
                 </div>
                 <div class="gallery_card_2">
-                    <div class="gallery_image_2 gallery_img">
+                    <div class="gallery_image_2 gallery_img" onclick="openmodal('https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/couple.jpg')">
                         <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/couple.jpg" alt="">
                     </div>
-                    <div class="gallery_image_2 gallery_img">
+                    <div class="gallery_image_2 gallery_img" onclick="openmodal('https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/groom-with-bride-are-knocking-glasses-with-champagne.jpg')">
                         <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/groom-with-bride-are-knocking-glasses-with-champagne.jpg"
                             alt="">
     
                     </div>
                 </div>
-                <div class="gallery_card_1 gallery_img">
+                <div class="gallery_card_1 gallery_img" onclick="openmodal('https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/bearded-stylish-groom-suit-beautiful-blonde.jpg')">
                     <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/bearded-stylish-groom-suit-beautiful-blonde.jpg"
                         alt="">
                 </div>
@@ -230,26 +230,26 @@
             <div class="gallery">
                 <!-- <div class="gallery_container"> -->
                 <div class="gallery_card_2">
-                    <div class="gallery_image_2 gallery_img">
+                    <div class="gallery_image_2 gallery_img" onclick="openmodal('https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/bride-groom-having-their-wedding-with-guests-beach.jpg')">
                         <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/bride-groom-having-their-wedding-with-guests-beach.jpg"
                             alt="">
                     </div>
-                    <div class="gallery_image_2 gallery_img">
+                    <div class="gallery_image_2 gallery_img" onclick="openmodal('https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/wedding-ceremony-place-nature-outside-summer.jpg')">
                         <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/wedding-ceremony-place-nature-outside-summer.jpg"
                             alt="">
                     </div>
                 </div>
     
-                <div class="gallery_card_1 gallery_img">
+                <div class="gallery_card_1 gallery_img" onclick="openmodal('https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/bearded-stylish-groom-suit-beautiful-blonde.jpg')">
                     <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/bearded-stylish-groom-suit-beautiful-blonde.jpg"
                         alt="">
                 </div>
                 <div class="gallery_card_2">
-                    <div class="gallery_image_2 gallery_img">
+                    <div class="gallery_image_2 gallery_img" onclick="openmodal('https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/young-couple-broke-down-car-while-traveling.jpg')">
                         <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/young-couple-broke-down-car-while-traveling.jpg"
                             alt="">
                     </div>
-                    <div class="gallery_image_2 gallery_img">
+                    <div class="gallery_image_2 gallery_img" onclick="openmodal('https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/young-couple-traveling-car-sunny-day.jpg', '74')">
                         <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/young-couple-traveling-car-sunny-day.jpg"
                             alt="">
                     </div>
@@ -263,7 +263,7 @@
     <div class="popupcontainer" id="popupcontainer">
         <span id="closepopup">&times;</span>
         <div class="popupimg">
-            <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/bearded-stylish-groom-suit-beautiful-blonde.jpg" style="width: 435px; height: 600px;" alt="">
+            <img id="popupimage" src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/bearded-stylish-groom-suit-beautiful-blonde.jpg" style="width: 435px; height: 600px;" alt="">
         </div>
     </div>
     <!--gallery popup end-->
@@ -271,8 +271,13 @@
     <!--<script>
         console.log("hello world")
     </script> -->
+    <script>
+        /*function openmodal(){
+            alert('clicked function clalled');
+        }*/
+    </script>
     <script src="js/script.js"></script>   
-    <script src="js/array.js"></script>
+    <script src="js/array.js"></script> 
     <!--<script src="js/loop.js"></script>   -->
     </body>
 </html>
