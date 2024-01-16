@@ -59,14 +59,33 @@ menubar.addEventListener('click', myFunction);//when you pass a function as an a
 
 let tabcards = document.getElementById("tabcards");
 let groomside = document.getElementById('groomside');
-let brideside = document.getElementById('brideside');
+let brideside = document.querySelector('#brideside');
 let image1 = document.getElementById('image1');
 let closepopup = document.getElementById('closepopup');
 let popupcontainer = document.getElementById('popupcontainer');
 // let gallery_imeages = document.querySelector('p');
 // let gallery_imeages = document.querySelectorAll('p');
 let gallery_imeages = document.querySelectorAll('.gallery_img');
-console.log(gallery_imeages);
+console.log("select type: ", typeof(gallery_imeages));
+
+//open modal funciton
+
+function openmodal(imgsrc, widht, height){
+    let popupimage = document.querySelector('.popupimg img');
+    // console.log(popupimage);
+    popupimage.src = imgsrc;
+    popupimage.width = width;
+    popupimage.height = height;
+
+    popupcontainer.style.display = "block";
+    popupcontainer.style.overflow = "hidden";
+}
+
+gallery_imeages.forEach(function(e){
+    e.addEventListener('click', function(){
+        alert(e);
+    })
+})
 
 brideside.addEventListener('click', function(){
     tabcards.innerHTML = `
@@ -144,11 +163,3 @@ image1.addEventListener('click', function(){
 closepopup.addEventListener('click', function(){
     popupcontainer.style.display = "none";
 })
-
-function openmodal(imgsrc){
-    let popupimage = document.querySelector('.popupimg img');
-    // console.log(popupimage);
-    popupimage.src = imgsrc;
-    popupcontainer.style.display = "block";
-    popupcontainer.style.overflow = "hidden";
-}

@@ -9,8 +9,17 @@ for(let i=1; i<5;i++){
 
 //while loop
 let b = 0;
+//condition => boolean value(treu or false)
+/*
+while (condition) {
+    //code ...
+}
+*/
 while(b<10){
     console.log("hello while loop", b);
-    b++;
+    b++;//post increment of b by one
 }
+
+//do while loop
+
 

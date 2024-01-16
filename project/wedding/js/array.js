@@ -4,20 +4,24 @@
 //array can stroe one or more values in one variable
 // let x = "azad", 3, "gulam";//this is the wrong to store multiple values in one variable
 //values inside an array can be any data type
-let arr = ['azad', 'badal', 'sultan', 'salman', 45, 'suman', 856];
+//array ka index zero se start hota h
 
-// console.log(arr[3]);
+let arr = ['azad', 'badal', 'sultan', 'salman', 45, 'suman', 856, ['suman', 'ponung', 45, 16]];
+
+console.log(arr[3]);
+//access suman from arr
+console.log("array value: ", arr[7][0]);
 
 //access array elements by for loop
-for(let i=0; i<7;i++){
+for(let i=0; i<8;i++){
     console.log(arr[i]);
 }
 
 //access array elements by while loop
 let a = 0;
-while(a<7){
+while(a<8){
     console.log(arr[a]);
-    a++;
+    a++;//post increment by one
 }
 
 //function is a set of code which execute when we called that function
@@ -28,6 +32,7 @@ function myFunc (){
 console.log("before calling function")
 myFunc();//code inside function execute now
 
+//function with some parameters
 function sum(a, b, c, d){
     console.log("hello sum function", a+c+b);
     console.log(d+c)// this will return NaN => not a number
@@ -35,6 +40,7 @@ function sum(a, b, c, d){
     console.log("after return")
     return a+b+c+d;
 }
+//call function with some arguments
 let funval = sum(26, 74, 32, 74);
 console.log(funval);
 
@@ -46,7 +52,7 @@ console.log(c);//when you declear a variable but not assign value that will retu
 function dummy (){
     console.log("dumyś");
 }
+
 arr.forEach(function(e){
     console.log(e);
-    console.log("hel")
 });
