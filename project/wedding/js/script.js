@@ -70,20 +70,40 @@ console.log("select type: ", typeof(gallery_imeages));
 
 //open modal funciton
 
-function openmodal(imgsrc, widht, height){
+function openmodal(imgsrc, width, height){
+    console.log("openmodal func", imgsrc, width);
     let popupimage = document.querySelector('.popupimg img');
     // console.log(popupimage);
     popupimage.src = imgsrc;
-    popupimage.width = width;
-    popupimage.height = height;
+    if(width=='600px'){
+        console.log("true width")
+        popupimage.width=width;
+    }
+    // popupimage.width = width;
+    // popupimage.height = height;
 
     popupcontainer.style.display = "block";
     popupcontainer.style.overflow = "hidden";
 }
+console.log(gallery_imeages[2]);
 
+//bad approach
+
+// gallery_imeages[1].addEventListener('click', function(){
+
+// })
+//open image popup using array and foreach
 gallery_imeages.forEach(function(e){
-    e.addEventListener('click', function(){
-        alert(e);
+    e.addEventListener('click', function(element){
+        let imgTag = element.target;
+        let imgSrc = imgTag.src;
+        let width;
+        let height;
+        console.log(imgTag.className);
+        if(imgTag.className=="smallImg"){
+            width='600px';
+        }
+        openmodal(imgSrc, width, height);
     })
 })
 
