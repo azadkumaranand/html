@@ -206,6 +206,9 @@
                 <p class="line"></p>
             </div>
         </div>
+        <div class="container" style="position: sticky; top: 100px; z-index: 999">
+            <h1 style="">Hello sticky container</h1>
+        </div>
         <!--open popup for image and change image according to click by onclick attributes -->
         <!--
             
@@ -263,65 +266,72 @@
         open popup for image and change image according to click using array and foreach
     -->
     <div class="container">
-        <div class="gallery">
-            <div class="gallery_card_1 gallery_img" id="image1">
-                <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/bearded-stylish-groom-suit-beautiful-blonde.jpg"
-                    alt="">
-            </div>
-            <div class="gallery_card_2">
-                <div class="gallery_image_2 gallery_img">
-                    <img class="smallImg" src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/couple.jpg" width="" alt="">
-                </div>
-                <div class="gallery_image_2 gallery_img"    >
-                    <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/groom-with-bride-are-knocking-glasses-with-champagne.jpg"
-                        alt="">
+        <div class="gallerycontainer">
 
-                </div>
-            </div>
-            <div class="gallery_card_1 gallery_img">
-                <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/bearded-stylish-groom-suit-beautiful-blonde.jpg"
-                    alt="">
-            </div>
-        </div>
-        <div class="gallery">
-            <div class="gallery_card_2">
-                <div class="gallery_image_2 gallery_img">
-                    <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/bride-groom-having-their-wedding-with-guests-beach.jpg"
+            <div class="gallery">
+                <div class="gallery_card_1 gallery_img" id="image1">
+                    <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/bearded-stylish-groom-suit-beautiful-blonde.jpg"
                         alt="">
                 </div>
-                <div class="gallery_image_2 gallery_img">
-                    <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/wedding-ceremony-place-nature-outside-summer.jpg"
+                <div class="gallery_card_2">
+                    <div class="gallery_image_2 gallery_img">
+                        <img class="smallImg" src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/couple.jpg" width="" alt="">
+                    </div>
+                    <div class="gallery_image_2 gallery_img"    >
+                        <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/groom-with-bride-are-knocking-glasses-with-champagne.jpg"
+                            alt="">
+    
+                    </div>
+                </div>
+                <div class="gallery_card_1 gallery_img">
+                    <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/bearded-stylish-groom-suit-beautiful-blonde.jpg"
                         alt="">
                 </div>
             </div>
 
-            <div class="gallery_card_1 gallery_img">
-                <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/bearded-stylish-groom-suit-beautiful-blonde.jpg"
-                    alt="">
-            </div>
-            <div class="gallery_card_2">
-                <div class="gallery_image_2 gallery_img">
-                    <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/young-couple-broke-down-car-while-traveling.jpg"
+            <div class="gallery">
+                <div class="gallery_card_2">
+                    <div class="gallery_image_2 gallery_img">
+                        <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/bride-groom-having-their-wedding-with-guests-beach.jpg"
+                            alt="">
+                    </div>
+                    <div class="gallery_image_2 gallery_img">
+                        <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/wedding-ceremony-place-nature-outside-summer.jpg"
+                            alt="">
+                    </div>
+                </div>
+    
+                <div class="gallery_card_1 gallery_img">
+                    <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/bearded-stylish-groom-suit-beautiful-blonde.jpg"
                         alt="">
                 </div>
-                <div class="gallery_image_2 gallery_img">
-                    <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/young-couple-traveling-car-sunny-day.jpg"
-                        alt="">
+                <div class="gallery_card_2">
+                    <div class="gallery_image_2 gallery_img">
+                        <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/young-couple-broke-down-car-while-traveling.jpg"
+                            alt="">
+                    </div>
+                    <div class="gallery_image_2 gallery_img">
+                        <img src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/young-couple-traveling-car-sunny-day.jpg"
+                            alt="">
+                    </div>
                 </div>
             </div>
+
+            <!--gallery popup start -->
+            <div class="popupcontainer" id="popupcontainer">
+                <span id="closepopup">&times;</span>
+                <div class="popupimg">
+                    <img id="popupimage" src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/bearded-stylish-groom-suit-beautiful-blonde.jpg" style="width: 435px; height: 600px;" alt="">
+                </div>
+            </div>
+            <!--gallery popup end-->
         </div>
+        
     </div>
     
     <!--gallery end-->
 
-    <!--gallery popup start -->
-    <div class="popupcontainer" id="popupcontainer">
-        <span id="closepopup">&times;</span>
-        <div class="popupimg">
-            <img id="popupimage" src="https://www.tooplate.com/templates/2131_wedding_lite/images/gallery/bearded-stylish-groom-suit-beautiful-blonde.jpg" style="width: 435px; height: 600px;" alt="">
-        </div>
-    </div>
-    <!--gallery popup end-->
+    
 
     <!--<script>
         console.log("hello world")

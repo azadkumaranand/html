@@ -75,9 +75,13 @@ function openmodal(imgsrc, width, height){
     let popupimage = document.querySelector('.popupimg img');
     // console.log(popupimage);
     popupimage.src = imgsrc;
-    if(width=='600px'){
+    // if(width=='600px'){
+    //     console.log("true width")
+    //     popupimage.style.width=width;
+    // }
+    if(width!=''){
         console.log("true width")
-        popupimage.width=width;
+        popupimage.style.width=width;
     }
     // popupimage.width = width;
     // popupimage.height = height;
@@ -101,7 +105,7 @@ gallery_imeages.forEach(function(e){
         let height;
         console.log(imgTag.className);
         if(imgTag.className=="smallImg"){
-            width='600px';
+            width='700px';
         }
         openmodal(imgSrc, width, height);
     })
