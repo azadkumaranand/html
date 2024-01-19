@@ -55,8 +55,16 @@ console.log("below function")
 
 menubar.addEventListener('click', myFunction);//when you pass a function as an argument then you don't need to add ()
 
-//change tab html content content on click
+//data type number and string
+let age1 = 26; //number data type
+let marks = 42.6; //number data type
+name = 'azad';
+let check;
+//how can i check data type
+console.log(typeof(check)=='undefined');
+console.log(typeof(typeof(check)));
 
+//change tab html content content on click
 let tabcards = document.getElementById("tabcards");
 let groomside = document.getElementById('groomside');
 let brideside = document.querySelector('#brideside');
@@ -71,7 +79,7 @@ console.log("select type: ", typeof(gallery_imeages));
 //open modal funciton
 
 function openmodal(imgsrc, width, height){
-    console.log("openmodal func", imgsrc, width);
+    console.log("width: ", width);
     let popupimage = document.querySelector('.popupimg img');
     // console.log(popupimage);
     popupimage.src = imgsrc;
@@ -79,15 +87,20 @@ function openmodal(imgsrc, width, height){
     //     console.log("true width")
     //     popupimage.style.width=width;
     // }
-    if(width!=''){
+    // console.log("is width set: ", width!='');
+
+    if(typeof(width)!='undefined'){
         console.log("true width")
         popupimage.style.width=width;
+    }
+    if(typeof(width)=='undefined'){
+        popupimage.style.width='450px';
     }
     // popupimage.width = width;
     // popupimage.height = height;
 
     popupcontainer.style.display = "block";
-    popupcontainer.style.overflow = "hidden";
+    // document.body.style.overflow = "hidden";
 }
 console.log(gallery_imeages[2]);
 
@@ -103,10 +116,13 @@ gallery_imeages.forEach(function(e){
         let imgSrc = imgTag.src;
         let width;
         let height;
-        console.log(imgTag.className);
+        console.log("class: ", imgTag.className);
+        console.log(imgTag.className=="smallImg");
         if(imgTag.className=="smallImg"){
+            console.log("inside class ")
             width='700px';
         }
+        console.log("width: ", width);
         openmodal(imgSrc, width, height);
     })
 })
@@ -186,4 +202,5 @@ image1.addEventListener('click', function(){
 
 closepopup.addEventListener('click', function(){
     popupcontainer.style.display = "none";
+    // document.body.style.overflow = "auto";
 })
