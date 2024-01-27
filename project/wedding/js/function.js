@@ -24,6 +24,7 @@ console.log("hello undefined", a)
 
 function func1(b, c){
     let d = 4;///local variable of func1
+    // let d = 5; //you can't redeclear a variable in same scope
     //global variable can be used inside functions
     //but local variable can't be used outside of functions
     console.log("function with parameters", a, b, c);

@@ -10,6 +10,12 @@ console.log(name);
 
 name = "suman";
 
+//when you declear a variable with const you can't change value of that variable
+
+const pie = 3.14;
+
+// pie = 4.23;
+
 console.log(name);
 
 const age = 23;
