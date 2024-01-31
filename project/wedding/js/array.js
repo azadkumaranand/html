@@ -2,19 +2,20 @@
 
 //array is a data type
 //array can stroe one or more values in one variable
-// let x = "azad", 3, "gulam";//this is the wrong to store multiple values in one variable
+// let x = "azad", 3, "gulam";//this is the wrong way to store multiple values in one variable
 //values inside an array can be any data type
 //array ka index zero se start hota h
 
 let arr = ['azad', 'badal', 'sultan', 'salman', 45, 'suman', 856, ['suman', 'ponung', 45, 16]];
 
-console.log(arr[3]);
+console.log(arr[3]);//output = salman
 //access suman from arr
 console.log("array value: ", arr[7][0]);
 
 //access array elements by for loop
 for(let i=0; i<8;i++){
     console.log(arr[i]);
+    // console.log(arr2[i]);
 }
 
 //access array elements by while loop
@@ -53,6 +54,9 @@ function dummy (){
     console.log("dumyś");
 }
 
-arr.forEach(function(e){
-    console.log(e);
+//anonymus function=> function jiska nam na ho
+arr.forEach(function(array_element){
+    console.log(array_element);
 });
+
+console.log("Array Type: ", typeof(arr));

@@ -1,6 +1,6 @@
 // console.log("hello wolrd inside script file");
 //variable is a container whcih store the information
-let varName = 'azad';
+let varName = 'azad';//this is string data type
 let age = 30;
 let info = "hello world my name is azad kumar";
 console.log(info);
@@ -12,7 +12,7 @@ let menubar = document.getElementById('menubar');
 console.log(menubar);
 
 //what is function and how can i declear a function
-//function is a set of code which executes when we call that function
+//function is a set of code which executes(run) when we call that function
 
 function myFunction(){
     // console.log("you have clicked on menubar");
@@ -93,9 +93,9 @@ function openmodal(imgsrc, width, height){
         console.log("true width")
         popupimage.style.width=width;
     }
-    if(typeof(width)=='undefined'){
-        popupimage.style.width='450px';
-    }
+    // if(typeof(width)=='undefined'){
+    //     popupimage.style.width='450px';
+    // }
     // popupimage.width = width;
     // popupimage.height = height;
 
@@ -112,6 +112,7 @@ console.log(gallery_imeages[2]);
 //open image popup using array and foreach
 gallery_imeages.forEach(function(e){
     e.addEventListener('click', function(element){
+        console.log(element);
         let imgTag = element.target;
         let imgSrc = imgTag.src;
         let width;
