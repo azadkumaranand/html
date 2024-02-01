@@ -1,11 +1,11 @@
-//assignemt operator is used to assing the value to variable
+//assignemt operator (=) is used to assing the value to variable
 
 let a = 5;
 let b = 10;
 
 b = b + a;
 
-b += a;
+b += a; // = b = b + a;
 
 console.log(b);
 
@@ -16,7 +16,7 @@ a -= b;
 
 console.log(a);
 console.log(b);
-// a = a%b;
+a = a%b;
 a %= b;
 
 console.log(a);
