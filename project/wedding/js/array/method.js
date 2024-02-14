@@ -58,7 +58,16 @@ console.log(arr2.concat(arr, arr1));
 
 //splice(initial_index,delete_element, "items") method is used to add new items in array
 
-const arr4 = ['azad', 'badal', 'sultan', 'salman'];
+let arr4 = ['azad', 'badal', 'sultan', 'salman'];
 
 arr4.splice(1, 0, "Samriddhi","sakshi", "khushi");
 console.log(arr4);
+
+//slice(initital_index, end_index) method is used to slices out a piece of an array into new array
+
+//end_index will be exclude
+
+arr4 = ['azad', 'badal', 'sultan', 'salman', 'saurav', 'shagun'];
+
+let arr5 = arr4.slice(1,4);
+console.log(arr5);
