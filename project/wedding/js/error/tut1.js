@@ -1,6 +1,6 @@
 
 // try, catch, throw,
-let x = 105;
+let x = 100;
 console.log("hello error");
 try{
     // console.log(typeof(x) == 'undefined');
@@ -13,10 +13,28 @@ try{
     }else{
         console.log(x+34);
     }
+}
+catch(err){
+    console.log(`error message ${err}`);
+}
 
+let a = 100;
+let b = 1;
+
+console.log(a/b);
+
+try{
+    if(b==0){
+        throw "value of b should not be 0";
+    }
+    console.log("after throw");
+    console.log(a/b);
 }
 catch(err){
     console.log(err);
+}
+finally{
+    console.log("object");
 }
 
 //ajax

@@ -4,6 +4,8 @@
 
 let name = "azad";
 
+console.log(name);
+
 // let name = "suman";//you can't declear a variable more than one times
 
 console.log(name);
