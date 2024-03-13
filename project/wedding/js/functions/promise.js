@@ -2,6 +2,26 @@
 
 //promise object
 
+let promisebycode = new Promise(function(resolve, reject){
+    let a = 10;
+    if (a==12) {
+        resolve('your value is good');
+    }else{
+        reject('your value is rejeted');
+    }
+})
+
+promisebycode.then(
+    function(val){
+        console.log(val)
+    },
+    function(error){
+        console.log(error)
+    }
+)
+
+
+
 let myPromise = new Promise((resolve, reject)=>{
     // resolve();//when successful
     // reject();//when not successful
